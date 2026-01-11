@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -185,6 +186,24 @@
             gap: 5px;
         }
         
+        .color-box {
+            width: 60px;
+            height: 30px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .color-1 {
+            background-color: #e06738;
+        }
+        
+        .color-2 {
+            background-color: #b8f2e3;
+        }
+        
+        .color-3 {
+            background-color: #518b82;
+        }
         
         .brand-header {
             display: flex;
@@ -354,7 +373,7 @@
             </div>
             <div>
                 <h1>Gizlilik Politikası <span class="child-friendly-badge">Çocuklara Uygun</span></h1>
-                <p class="subtitle">Uygulama kullanım koşulları ve sorumluluklar</p>
+                <p class="subtitle">Uygulama kullanım koşulları ve veri güvenliği</p>
             </div>
         </div>
         
@@ -366,8 +385,8 @@
         
         <!-- Navigasyon Linkleri -->
         <div class="nav-links">
-            <a href="privacy-policy.html" class="nav-link">Gizlilik Politikası</a>
-            <a href="terms.html" class="nav-link active">Kullanım Şartları</a>
+            <a href="privacy-policy.html" class="nav-link active">Gizlilik Politikası</a>
+            <a href="terms.html" class="nav-link">Kullanım Şartları</a>
         </div>
         
         <div class="language-switcher">
@@ -398,7 +417,9 @@
                 <li>Cihaz işletim sistemi bilgisi</li>
             </ul>
             <p>Uygulama kesin konum bilgisi toplamaz.</p>
-            <p>Uygulama, çocuklardan bilerek kişisel olarak tanımlanabilir bilgi (ad, soyad, e-posta, telefon numarası vb.) talep etmez.</p>
+            <div class="highlight">
+                <p>Uygulama, çocuklardan bilerek kişisel olarak tanımlanabilir bilgi (ad, soyad, e-posta, telefon numarası vb.) talep etmez.</p>
+            </div>
             
             <div class="section-divider"></div>
             
@@ -409,7 +430,9 @@
                 <li>Performans ve hata analizi yapmak</li>
                 <li>Kullanıcı deneyimini geliştirmek</li>
             </ol>
-            <p>Bu veriler reklam hedefleme veya profil oluşturma amacıyla kullanılmaz.</p>
+            <div class="warning-box">
+                <p><strong>Önemli:</strong> Bu veriler reklam hedefleme veya profil oluşturma amacıyla kullanılmaz.</p>
+            </div>
             
             <div class="section-divider"></div>
             
@@ -437,7 +460,9 @@
             
             <h3>Çocukların Gizliliği</h3>
             <p>Uygulama, çocukların gizliliğini korumayı esas alır. Çocuklardan bilerek kişisel veri toplanmaz. Yanlışlıkla böyle bir veri toplandığının fark edilmesi hâlinde, ilgili veriler derhal silinir.</p>
-            <p>Ebeveyn veya yasal vasiyseniz ve çocuğunuzla ilgili bir gizlilik talebiniz varsa, bizimle iletişime geçebilirsiniz.</p>
+            <div class="highlight">
+                <p>Ebeveyn veya yasal vasiyseniz ve çocuğunuzla ilgili bir gizlilik talebiniz varsa, bizimle iletişime geçebilirsiniz.</p>
+            </div>
             
             <div class="section-divider"></div>
             
@@ -477,7 +502,9 @@
                 <li>Mobile device operating system</li>
             </ul>
             <p>The Application does not collect precise location data.</p>
-            <p>The Application does not knowingly request or collect personally identifiable information (such as name, surname, email address, or phone number) from children.</p>
+            <div class="highlight">
+                <p>The Application does not knowingly request or collect personally identifiable information (such as name, surname, email address, or phone number) from children.</p>
+            </div>
             
             <div class="section-divider"></div>
             
@@ -488,7 +515,9 @@
                 <li>To perform performance monitoring and error analysis</li>
                 <li>To improve the user experience</li>
             </ol>
-            <p>This data is not used for advertising targeting or user profiling.</p>
+            <div class="warning-box">
+                <p><strong>Important:</strong> This data is not used for advertising targeting or user profiling.</p>
+            </div>
             
             <div class="section-divider"></div>
             
@@ -516,7 +545,9 @@
             
             <h3>Children's Privacy</h3>
             <p>The Application places a high priority on protecting children's privacy. No personal data is knowingly collected from children. If it is discovered that such data has been collected unintentionally, it will be deleted immediately.</p>
-            <p>Parents or legal guardians may contact the Service Provider regarding any privacy-related concerns involving their children.</p>
+            <div class="highlight">
+                <p>Parents or legal guardians may contact the Service Provider regarding any privacy-related concerns involving their children.</p>
+            </div>
             
             <div class="section-divider"></div>
             
@@ -543,6 +574,10 @@
     <footer>
         <p>© 2026 Nazca Rieche. Kelime Yakalama uygulaması.</p>
         <p>Bu gizlilik politikası 11 Ocak 2026 tarihinden itibaren geçerlidir.</p>
+        <p style="margin-top: 10px;">
+            <a href="privacy-policy.html" style="color: #e06738; text-decoration: none; margin-right: 15px;">Gizlilik Politikası</a>
+            <a href="terms.html" style="color: #518b82; text-decoration: none;">Kullanım Şartları</a>
+        </p>
     </footer>
     
     <script>
@@ -596,6 +631,17 @@
                 altLogo.className = 'brand-icon';
                 altLogo.textContent = 'KY';
                 altLogo.style.margin = '0 auto';
+                altLogo.style.width = '70px';
+                altLogo.style.height = '70px';
+                altLogo.style.background = 'linear-gradient(135deg, #e06738, #518b82)';
+                altLogo.style.borderRadius = '12px';
+                altLogo.style.display = 'flex';
+                altLogo.style.alignItems = 'center';
+                altLogo.style.justifyContent = 'center';
+                altLogo.style.color = 'white';
+                altLogo.style.fontWeight = 'bold';
+                altLogo.style.fontSize = '1.5rem';
+                altLogo.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
                 logoContainer.insertBefore(altLogo, logoContainer.firstChild);
             });
             
@@ -605,8 +651,23 @@
             });
         });
         
+        // Navigasyon linkleri için aktif sayfa kontrolü
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'privacy-policy.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (currentPage === linkPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+        
         // Renk paletini göster
-        console.log("Kullanılan renk paleti:");
+        console.log("Gizlilik Politikası - Kullanılan renk paleti:");
         console.log("- Ana renk (turuncu): #e06738");
         console.log("- Açık renk (açık turkuaz): #b8f2e3");
         console.log("- Koyu renk (turkuaz-yeşil): #518b82");
